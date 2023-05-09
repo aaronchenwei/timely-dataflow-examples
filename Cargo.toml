@@ -1,0 +1,20 @@
+[package]
+name = "timely-dataflow-examples"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+default-run = "timely-dataflow-examples"
+
+[[bin]]
+name = "example1"
+path = "src/example1/bin/main.rs"
+
+[[bin]]
+name = "example2"
+path = "src/example2/bin/main.rs"
+
+[dependencies]
+timely = { git = "https://github.com/TimelyDataflow/timely-dataflow" }
+differential-dataflow = { git = "https://github.com/TimelyDataflow/differential-dataflow" }
